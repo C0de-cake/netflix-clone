@@ -1,0 +1,15 @@
+@if (movie && movie.id) {
+  <div class="card">
+    <img [src]="tmdbService.getImageURL(movie.poster_path, 'w500')"
+    class="card-img-top">
+    <div class="card-body">
+      <div class="d-flex justify-content-between mb-3">
+        <span class="badge bg-primary">Released: {{movie.release_date | date: 'mediumDate'}}</span>
+        <span class="badge bg-primary">Original language: {{movie.original_language}}</span>
+        <span class="badge bg-primary">Popularity: {{movie.popularity}}</span>
+      </div>
+      <h5>Overview</h5>
+      <p class="card-text">{{movie.overview}}</p>
+    </div>
+  </div>
+}

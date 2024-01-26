@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand sticky-top bg-dark border-bottom" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img ngSrc="/assets/logo/netflix.png" priority alt="logo-netflix" width="100" height="30.45"
+           class="d-inline-block align-text-top">
+    </a>
+    <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+      <div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">Home</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <form class="d-flex input-group" role="search">
+              <span class="input-group-text">
+                <fa-icon icon="search"></fa-icon>
+              </span>
+          <input [ngModel]="searchTerm" (ngModelChange)="onSearch($event)" name="search"
+                 class="form-control me-2"
+                 type="search"
+                 placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>

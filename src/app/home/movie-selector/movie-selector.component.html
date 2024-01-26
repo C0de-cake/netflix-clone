@@ -1,0 +1,15 @@
+<div class="main-content">
+  <div class="mt-3">
+    <h4 class="ms-5 mb-0">Trends</h4>
+    <app-movie-list [mode]="'TREND'"></app-movie-list>
+  </div>
+
+  @if (genres) {
+    @for (genre of genres; track genre.id) {
+      <div class="mt-3">
+        <h4 class="ms-5 mb-0">{{ genre.name }}</h4>
+        <app-movie-list [mode]="'GENRE'" [genreId]="genre.id"></app-movie-list>
+      </div>
+    }
+  }
+</div>

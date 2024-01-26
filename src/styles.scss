@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootswatch/dist/cyborg/variables';
+@import 'bootstrap/scss/bootstrap';
+@import 'bootswatch/dist/cyborg/bootswatch';

@@ -1,0 +1,16 @@
+@if (trendMovies) {
+  <div class="d-flex align-items-center ms-5 overflow-x-auto container-movies">
+    @for(movie of trendMovies; track movie.id) {
+      <app-movie-card [movie]="movie"></app-movie-card>
+    }
+  </div>
+}
+
+
+@if (moviesByGenre) {
+  <div class="d-flex align-items-center ms-5 overflow-x-auto container-movies">
+    @for(movie of moviesByGenre; track movie.id) {
+      <app-movie-card [movie]="movie"></app-movie-card>
+    }
+  </div>
+}

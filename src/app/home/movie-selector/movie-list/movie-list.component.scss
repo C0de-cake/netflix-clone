@@ -1,0 +1,10 @@
+.container-movies {
+  height: 350px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.container-movies::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
